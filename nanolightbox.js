@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014, Eric Garver
+ * Copyright (c) 2014 - 2015, Eric Garver
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -23,7 +23,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-function whatbox (node) {
+function nanolightbox (node) {
 	var body = document.getElementsByTagName("body")[0];
 	var div = document.createElement("div");
 	var img = document.createElement("img");
@@ -38,7 +38,7 @@ function whatbox (node) {
 
 	img.setAttribute("src", node.getAttribute("href"));
 
-	div.setAttribute("id", "whatbox");
+	div.setAttribute("id", "nanolightbox");
 
 	a.appendChild(img);
 	div.appendChild(a);
